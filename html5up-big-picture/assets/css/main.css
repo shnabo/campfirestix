@@ -20,6 +20,7 @@
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
+		/*display: flex;*/
 	}
 
 	body {
@@ -47,7 +48,14 @@
 	body {
 		-webkit-text-size-adjust: none;
 	}
-
+/*
+#flexmedia {
+	display: flex;
+}*/
+/*
+#flexflexmedia {
+	flex: 1;
+}*/
 /* Box Model */
 
 	*, *:before, *:after {
@@ -2126,8 +2134,10 @@
 /* Intro */
 
 	#intro {
-		background: url("images/sunset.jpg"), url("../../images/intro.jpg");
+		background: url("images/forest.jpg"), url("../../images/intro.jpg");
+		background-color: black;
 		background-size: 100%;
+		background-repeat: no-repeat;
 		/*background-size: 256px 256px, cover;*/
 		/*background-attachment: fixed, fixed;
 		background-position: top left, bottom center;*/
@@ -2137,9 +2147,10 @@
 /* One */
 
 	#one {
-		background: url("images/beerflag.jpg"), url("../../images/one.jpg");
+		background: url("images/fire.jpg"), url("../../images/one.jpg");
 		background-size: 100%;
-		background-position: top left;
+		background-repeat: none;
+
 		/*background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;*/
@@ -2148,12 +2159,37 @@
 /* Two */
 
 	#two {
+		background: url("images/sunset.jpg"), url("../../images/two.jpg");
+		background-size: 100%;
+		background-repeat: none;
+	}
+
+	/* Three */
+	#three{
+		background: white;I
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+		background-repeat: no-repeat;
+		}
+  /* Four */
+	#four {
 		background: url("images/overlay.png"), url("../../images/two.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
-	}
+		background-repeat: no-repeat;
+		}
 
+  /* Five */
+
+	#five {
+		background: url("images/overlay.png"), url("../../images/two.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+		background-repeat: no-repeat;
+			}
 /* Contact */
 
 	#contact {
